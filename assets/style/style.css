@@ -1,0 +1,52 @@
+.header,.footer {
+    display: flex;
+    justify-content: center
+}
+.main {
+    display: flex;
+    justify-content: space-evenly
+}
+.btnCost {
+    /* сброс стилей */
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    
+    /* переопределение стилей для ссылок */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+    /* небольшие вертикальные отступы */
+    margin: 5px 0;
+
+    /* невидимая рамка */
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    /* для установки размеров используем паддинги */
+    padding: 0.5em 1em;
+
+    /* контрастные цвета */
+    color: #ffffff;
+    background-color: #5571af;
+    }
+    .btnCost:active {
+        transform: translateY(1px);
+        filter: saturate(150%);
+    }
+    
+    .btnCost:hover,
+    .btnCost:focus {
+        color: #5571af;
+        border-color: currentColor;
+        background-color: white;
+    }
+    
+    /* сброс браузерных стилей для фокуса */
+    .btnCost::-moz-focus-inner {
+        border: none;
+    }
